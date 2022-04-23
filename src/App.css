@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.grid-container {
+  width: 70%;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+  /* background-color: red; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 20px;
+
+  /* color: aqua; */
+  margin: 20px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.inpt {
+  border: none;
+  padding: 20px;
+  margin-left: 10px;
+  margin-top: 40px;
+  width: 190px;
+  height: 30px;
+  border-radius: 8px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  position: sticky;
+  top: 0;
+  font-size: 20px;
+  padding-left: 10px;
+  font-weight: 600;
+  font-size: 26px;
+  color: black
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.btn button {
+  border-style: none;
+  padding: 20px;
+  margin-top: -80px;
+  width: 250px;
+  border-radius: 10px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  border: none;
+
+  
+ 
+  
+  margin-right: 10px;
+  /* border-radius: 5px; */
+  /* background: #000000; */
+  /* background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19); */
+  /* background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673); */
+  background-color: #2d55ff;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  cursor: pointer;
+
 }
+
+button:hover {
+  background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, #00082d, #00058d, #4e4ee7, #00155a);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+
+.App {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-color: #fafafa;
+  padding-top: 4rem;
+  min-height: 100vh;
+}
+
+/* body{
+  background-color: transparent !important;
+} */
